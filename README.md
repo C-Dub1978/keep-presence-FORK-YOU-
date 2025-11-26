@@ -37,9 +37,6 @@ keep-presence
 # Manual installation
 
 ```
-git clone https://github.com/carrot69/keep-presence.git
-
-cd keep-presence
 
 python3 -m pip install pynput
 
@@ -70,10 +67,6 @@ python3 src/keep-presence.py
 
 ## FAQ: 
 
-### Does it work on Wayland?
-
-No, currently the program doesn't support Wayland due to limitations in the underlying library (pynput). We're actively looking for solutions and will update this FAQ if/when Wayland support is available. You can track progress on the GitHub issue: [GitHub issue](https://github.com/carrot69/keep-presence/issues/2)
-
 ### How can I stop the program after a certain amount of time?
 
 Linux offers the timeout command, which allows you to set a maximum runtime for any command.
@@ -84,7 +77,7 @@ Example:
 timeout 30s keep-presence
 ```
 
-### Launch Keep-Presence on Startup:
+### Launch on Startup:
 
 1. GNOME: Open "Startup Applications Preferences" (search for it in Activities).
 2. KDE Plasma: Search for "Startup Applications" in the Kickoff menu.
