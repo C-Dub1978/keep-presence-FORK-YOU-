@@ -89,9 +89,3 @@ timeout 30s keep-presence
 **Using Systemd:**
 
 Alternatively, you can use Systemd to manage Keep-Presence as a startup service. Refer to the official Systemd documentation for detailed instructions on how to set this up.
-
-# Supporting the project:
-
-If you've found Keep Presence to be helpful, you can buy me a coffee, thanks!
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/keep_presence)
