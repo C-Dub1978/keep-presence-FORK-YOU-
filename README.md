@@ -1,31 +1,8 @@
-# Keep Presence
-
-This program **moves the mouse** or presses a key when it detects that you are **away** from your computer.
-
-It does nothing if you are using your computer, making it useful for **tricking your machine into thinking you are still using it**.
-
-## Demo
-
-[![Demo](https://raw.githubusercontent.com/carrot69/keep-presence/master/demo/demo.gif)](https://github.com/carrot69/keep-presence)
-
-## Table of Contents
-
-- [Install from Pypi](#install-from-pypi)
-- [Install with Snap](#install-with-snap)
-- [Manual installation](#manual-installation)
-- [Optional arguments](#optional-arguments)
-- [FAQ](#faq)
-    - [Does it work on Wayland?](#does-it-work-on-wayland)
-    - [How can I stop the program after a certain amount of time?](#how-can-i-stop-the-program-after-a-certain-amount-of-time)
-    - [Launch Keep-Presence on Startup](#launch-keep-presence-on-startup)
-- [Supporting the project](#supporting-the-project)
-
 # Install from Pypi
 
 ```
 python3 -m pip install keep_presence
 ```
-https://pypi.org/project/keep-presence/
 
 
 ### Run
@@ -77,16 +54,12 @@ python3 src/keep-presence.py
 -s SECONDS, --seconds SECONDS     Define in seconds how long to wait after a user is
                                   considered idle. Default 300.
 
--p PIXELS, --pixels PIXELS        Set how many pixels the mouse should move. Default 1.
+-p PIXELS, --pixels PIXELS        Set how many pixels to move. Default 1.
 
--c, --circular                    Move mouse in a circle. Default move diagonally.
+-c, --circular                    Move in a circle. Default move diagonally.
 
--m MODE, --mode MODE              Available options: keyboard, mouse, both (mouse & keyboard) and scroll. 
-                                  Default is mouse. 
-                                  This is the action that will be executed when the user is idle. 
-                                  If keyboard is selected, the program will press the shift key. 
-                                  If mouse is selected, the program will move the mouse. 
-                                  If both is selected, the program will do both actions.
+-m MODE, --mode MODE              Available options: keyboard, mouse, both and scroll. 
+                                  
 
 -r RANDOM RANDOM, --random RANDOM RANDOM
                                   Usage: two numbers (ex. -r 3 10). Execute actions based on a 
